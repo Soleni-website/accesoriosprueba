@@ -1,0 +1,474 @@
+/* Variables */
+:root {
+    --fondo: #ffffff;
+    --color-blanco: #fff;
+    --color-primario: #000;
+    --color-amarillo: #d3be00;
+    --color-amarillo-claro:#949494;
+    --titulos: 'font-style', italic;
+}
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.5;
+    width: 100%;
+    background-color: var(--fondo);
+}
+
+
+ h1,h2, p, a {
+    font-family: var(--titulos);
+}
+
+header {
+    padding-top: 35px;
+}
+
+.navbar-brand {
+    font-family: var(--titulos);
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.bg-collar span {
+    color: #d3be00;
+}
+
+.collapse.navbar-collapse {
+    justify-content: end;
+}
+
+nav.bg-collar {
+    background-color: var(--fondo);
+    font-weight: 600;
+}
+
+nav.bg-collar ul li a {
+    color: var(--color-primario);
+    position: relative;
+    font-size: 20px;
+}
+
+nav.bg-collar ul li a:hover {
+    color: #d3be00;
+}
+
+.nav-link {
+    margin-inline: 10px;
+}
+
+/* Hero */
+
+#hero {
+    background-color: var(--color-blanco);
+    padding: 0 0;
+}
+
+#hero img {
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    /*max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 4%;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
+}
+
+#hero .info h1 {
+    position: relative;
+    padding: 30px;
+    font-size: 50px;
+    color: var(--color-blanco);
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+#hero .info span {
+    position: relative;
+    border-bottom: 8px solid var(--color-blanco);
+}
+
+#hero .info p {
+    position: relative;
+    color: var(--color-blanco);
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+#hero .info .dest h2 {
+    position: relative;
+    color: var(--color-blanco);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Nosotros */
+
+#nosotros {
+    width: 100%;
+    position: relative;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+#nosotros h2 {
+    color: var(--color-primario);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#nosotros p {
+    font-size: 15px ;
+}
+
+#nosotros .row {
+    padding-top: 70px;
+}
+
+#nosotros .card {
+    border: none;
+    position: relative;
+    padding: 50px 20px 40px 20px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #e2e2e2);
+    box-shadow:  20px 20px 60px #959372,
+                 -20px -20px 60px #dbd7b4;
+    transition: .5s;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+
+#nosotros .card img {
+    width: 70px;
+    padding: 15px;
+    background-color: #dbd7b4;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+#nosotros h3 {
+    text-align: right;
+    color: var(--color-primario);
+    font-size: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#nosotros h4 {
+    color: var(--color-primario);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#nosotros .card a {
+    text-decoration: none;
+    color: var(--color-primarios);
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+
+#nosotros .card a:hover {
+    color: var(--color-azul);
+}
+
+
+#nosotros .card p {
+    text-align: left;
+    line-height: 26px;
+}
+
+
+/* Carousel Productos*/
+
+#productos {
+    background-color: #fffde9;
+    margin: 90px 0 150px 0;
+}
+
+#productos .container {
+    padding: 40px 0;
+}
+
+#productos h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-primario);
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 12px;
+}
+
+#productos p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 20px;
+    margin-top: 50px;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+  #productos .card {
+    border-radius: 30px;
+    border: none;
+    max-width: 270px;
+    margin: 0 auto;
+}
+
+#productos button {
+    font-size: 15px;
+    font-weight: 600;
+    border: none;   
+    background:  var(--color-primario);
+    border-radius: 10px;
+    color: white;
+    padding: 8px 15px;
+}
+
+#productos button:hover {
+    opacity: 60%;
+}
+
+
+#productos button:active {
+    opacity: 100%;
+}
+
+.swiper .btn {
+    color: var(--color-primario);
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+}
+
+.swiper .btn:active {
+    opacity: 60%;
+    background: white;
+}
+
+.swiper .btn::before,
+.swiper .btn::after {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#productos .info {
+    border: none;
+    padding: 15px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 20px;
+}    
+
+#productos .info h3 {
+    font-size: 19px;
+}
+
+#productos button {
+    margin-top: 15px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primario);
+}
+
+
+/* Comentarios */
+
+#comentarios {
+    text-align: center;
+    width: 60%;
+    position: relative;
+    padding: 40px 0 100px;
+    color: var(--color-primario);
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#comentarios .carousel-item {
+    padding: 60px 60px;
+    border-radius: 20px;
+    color: var(--color-primario);
+}
+
+#comentarios .container .carousel-inner  {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #fdf9d2, #fcf7a3);
+    box-shadow:  20px 20px 60px #bbb87b,
+                 -20px -20px 60px #dbd7b4;
+}
+
+#comentarios .carousel-item h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+#comentarios button {
+    padding: 13px 25px;
+    background: transparent;
+    border-radius: 12px;
+    border: 2px solid var(--color-primario);
+    color: var(--color-primario);
+    font: 20px;
+    font-weight: 700;
+    transition: .4s;
+    margin-top: 30px;
+}
+
+#comentarios button:hover {
+    background-color: 1px solid var(--color-primario);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+#comentarios button:active {
+    transform: scale(1);
+}
+
+/*  Footer  */
+
+footer .container {
+    border-top: 1px solid var(--color-primario);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.navbar-brand.footer {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer span {
+    color: rgb(211, 190, 0);
+}
+
+footer p {
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+footer .container img {
+    width: 25px;
+    margin-inline: 10px;
+    cursor: pointer;
+}
+
+footer .container img:hover {
+    opacity: 60%;
+}
+
+#suscribite {
+    text-align: center;
+    margin: 200px 0 200px 0;
+}
+
+#suscribite h2 {
+    color: var(--color-primario);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#suscribite input, #suscribite button {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+#suscribite input {
+    margin: 30px 0;
+    border-radius: 12px 0 0 12px;
+    color: var(--color-primario);
+}
+
+#suscribite button {
+    position: relative;
+    left: -6px;
+    border-radius: 0 12px 12px 0;
+    background-color: var(--color-primario);
+    color:  white;
+}
+
+#suscribite button:hover {
+    background-color:  rgb(211, 190, 0);
+}
+
+#suscribite button:active {
+    opacity: 100%;
+}
+
+
+#suscribite p {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 100px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 320px) and (max-width: 990px){
+    
+#hero {
+    position: relative;
+}
+
+#comentarios {
+    width: 85%;
+}
+
+#suscribite input,
+#suscribite button
+ {
+    font-size: 18px;
+}
+
+}
+
